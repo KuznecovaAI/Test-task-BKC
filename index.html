@@ -1,92 +1,96 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Test project</title>
+    <title>BKC-International House</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;@500;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="styles/style.css"/>
+    <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
 
-<header class="header">
-    <div class="header__ticker">
-        <div class="ticker-content" id="tickerTrack">
-            <span class="ticker-content__item">🔥 Специальное предложение: скидка 50% на все товары</span>
-            <span class="ticker-content__item">✨ Бесплатная доставка при заказе от 5000₽</span>
-            <span class="ticker-content__item">🎁 Подарок каждому новому клиенту</span>
-            <span class="ticker-content__item">⚡ Быстрая доставка по всей России</span>
-            <span class="ticker-content__item">🔥 Специальное предложение: скидка 50% на все товары</span>
-            <span class="ticker-content__item">✨ Бесплатная доставка при заказе от 5000₽</span>
-            <span class="ticker-content__item">🎁 Подарок каждому новому клиенту</span>
-            <span class="ticker-content__item">⚡ Быстрая доставка по всей России</span>
+
+<main>
+    <section class="appeal">
+        <h1 class="appeal__title-hidden">Апелляция</h1>
+        <div class="appeal__container">
+            <span class="appeal__header">В случае несогласия с результатами экзамена Кандидат имеет право на подачу апелляции:</span>
+            <ul class="appeal__list">
+                <li class="appeal__item">сроки подачи: не позднее 6 недель с даты письменного экзамена.</li>
+                <li class="appeal__item">сроки рассмотрения: от 2 дней до 3 недель с даты получения запроса.</li>
+                <li class="appeal__item">стоимость: 9500 рублей* +100 рублей комиссия за онлайн перевод</li>
+            </ul>
         </div>
-    </div>
 
-    <div class="header__middle" id="headerMiddle">
-        <div class="container header__container">
-            <div class="middle-content">
-                <span class="middle-content__email">📧 info@example.com</span>
-                <span class="middle-content__phone">📞 +7 (999) 123-45-67</span>
+
+        <div class="appeal__action">
+
+            <div class="action action__download">
+                <h3 class="action__title">СКАЧАЙТЕ И ЗАПОЛНИТЕ<br> два файла с заявлением на апелляцию</h3>
+                <div class="action__container">
+                    <a href="file.pdf" download class="link link--download">
+                        <img class="link__image" src="assets/down1.svg" alt="download">
+                    </a>
+
+                    <a href="file.pdf" download class="link link--download">
+                        <img class="link__image"src="assets/down2.svg" alt="download">
+                    </a>
+                </div>
             </div>
-            <div class="middle-content">
-                <span>Пн-Пт: 9:00 - 18:00</span>
+
+            <div class="action action__scan">
+                <h3 class="action__title">ОТСКАНИРУЙТЕ И ЗАГРУЗИТЕ<br> заполненные заявления</h3>
+
+                <div class="action__container">
+
+                    <form class="action__form">
+                        <label class="link link--upload">
+                            <img class="link__img" src="assets/add.svg" alt="">
+                            <span class="link__content">
+                                <span class="link__number">1
+                                    <img class="icon icon--check" src="assets/check.svg" alt="check">
+                                </span>
+                            </span>
+                            <input type="file" name="document" class="link__input" accept=".pdf,.jpg,.png" hidden>
+                        </label>
+                    </form>
+
+                    <form class="action__form">
+                        <label class="link link--upload">
+                            <img class="link__img" src="assets/add.svg" alt="">
+                            <span class="link__content">
+                                <span class="link__number">2
+                                    <img class="icon icon--check" src="assets/check.svg" alt="check">
+                                </span>
+                            </span>
+                            <input type="file" name="document" class="link__input" accept=".pdf,.jpg,.png" hidden>
+                        </label>
+                    </form>
+                </div>
+
+            </div>
+
+            <div class="action action__pay">
+                <h3 class="action__title">ОПЛАТИТЕ <br>подачу апелляции</h3>
+                <span class="action__price">Стоимость апелляции - 7700 ₽</span>
+                <button class="button button--colored">Оплата апелляции</button>
             </div>
         </div>
-    </div>
 
-    <div class="header__main">
-        <div class="container">
-            <div class="main-content">
-
-                <div class="logo">LOGO</div>
-
-                <nav class="header__nav">
-                    <ul class="navigation" id="navMenu"></ul>
-                </nav>
-
-                <button class="header__burger" id="burgerMenu">
-                    <span class="burger-line"></span>
-                    <span class="burger-line"></span>
-                    <span class="burger-line"></span>
-                </button>
-            </div>
+        <div class="appeal__info">
+            <span class="appeal__text">Важная информация для корректного заполнения заявления:</span>
+            <span class="appeal__text">Centre name: BKC-ih Moscow IELTS Test Centre</span>
+            <span class="appeal__text">Centre number: RU087</span>
+            <span class="appeal__text">Candidate number:  Цифры в верхнем правом углу сертификата/можно не заполнять, если сертификат еще не получен.</span>
         </div>
-    </div>
-</header>
 
-<main class="main">
-    <div class="container">
-        <section class="hero">
-            <h1 class="hero__title">Добро пожаловать!</h1>
-            <p class="hero__subtitle">Откройте для себя мир креативных решений</p>
-        </section>
-
-        <section class="showcase">
-            <h2 class="showcase__title">Наша коллекция</h2>
-
-            <div class="showcase__filter">
-                <button class="btn btn--outlined btn--active" data-filter="all">Все</button>
-                <button class="btn btn--outlined" data-filter="premium">Премиум</button>
-                <button class="btn btn--outlined" data-filter="sale">Распродажа</button>
-                <button class="btn btn--outlined" data-filter="new">Новинки</button>
-            </div>
-
-            <div class="showcase__product" id="showcaseProduct"></div>
-        </section>
-    </div>
-
+    </section>
 </main>
 
-<footer class="footer" id="footer">
-    <div class="container">
-        <span>© 2026 Все права защищены</span>
-    </div>
-</footer>
-
-<script type="module" src="js/app.js"></script>
+<script src="js/uploadFile.js"></script>
 </body>
 </html>

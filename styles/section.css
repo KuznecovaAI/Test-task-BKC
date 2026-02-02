@@ -1,0 +1,164 @@
+.appeal {
+    padding: 50px;
+}
+
+.appeal__title-hidden {
+    position: absolute;
+    inset: 0;
+    clip-path: inset(50%);
+    overflow: hidden;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+}
+
+.appeal__header {
+    display: block;
+    padding-bottom: 23px;
+}
+
+.appeal__item {
+    position: relative;
+    padding-left: 42px;
+    margin-bottom: 8px;
+}
+
+.appeal__item::before {
+    content: "";
+    position: absolute;
+    left: 27px;
+    top: 8px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--primary-color);
+}
+
+
+/*Action */
+.appeal__action {
+    padding: 40px 0 50px 0;
+
+    display: flex;
+    justify-content: center;
+    column-gap: 128px;
+    row-gap: 40px;
+    flex-wrap: wrap;
+}
+
+.action {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.action__download {
+    width: 229px;
+}
+
+.action__scan {
+    width: 274px;
+}
+
+.action__pay {
+    width: 274px;
+    gap: 0;
+}
+
+.action__title {
+    text-align: center;
+    line-height: 1.15;
+    padding-bottom: 17px;
+}
+
+
+/*Icons download/upload*/
+.action__container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 28px;
+}
+
+.action__price {
+    display: block;
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    padding-bottom: 45px;
+    text-align: center;
+}
+
+.link__image {
+    display: block;
+}
+
+.link:hover {
+    border-color: var(--primary-color);
+    transform: translateY(-2px);
+}
+
+.action__form {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.link--upload {
+    position: relative;
+    display: inline-block;
+
+}
+
+.link__img {
+    display: block;
+    height: auto;
+}
+
+.link__number {
+    position: absolute;
+    top: 59%;
+    left: 44%;
+    transform: translate(-50%, -50%);
+
+    font-size: 3.4rem;
+    font-weight: 700;
+    letter-spacing: -4px;
+    color: var(--primary-color);
+
+}
+
+.icon--check {
+    width: 25px;
+    display: none;
+}
+
+.link--filled .icon--check {
+    display: inline-block;
+}
+
+.link__input {
+    display: none;
+}
+
+
+/*Info*/
+.appeal__info {
+    font-size: 1.2rem;
+    padding: 15px;
+    background-color: var(--info-color);
+    border: 1px solid var(--primary-color);
+}
+
+.appeal__text {
+    display: block;
+    line-height: 1.15;
+}
+
+@media (max-width: 768px) {
+    .appeal {
+        padding: 20px;
+    }
+}
+

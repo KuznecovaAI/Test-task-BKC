@@ -1,0 +1,29 @@
+.button {
+    transition: var(--transition-base);
+}
+
+/*Colored*/
+.button--colored {
+    width: 245px;
+    height: 36px;
+    padding: 7px;
+    margin-bottom: 61px;
+    margin-left: 2px;
+    border-radius: var(--radius-md);
+    background: var(--primary-color);
+    color: var(--light-color);
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.button--colored:hover {
+    transform: translateY(-2px);
+    filter: brightness(0.9);
+}
+
+@media (max-width: 768px) {
+    .button--colored {
+        margin-bottom: 0;
+    }
+}

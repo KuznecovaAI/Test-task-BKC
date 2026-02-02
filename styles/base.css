@@ -8,17 +8,21 @@
 
 html {
     font-size: 10px;
-    line-height: 1.5;
+    line-height: 1.2;
 }
 
 body {
-    margin: 0;
     font-family: var(--font-family);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    font-weight: 400;
-    color: var(--dark-color);
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: var(--text-color);
     overflow-x: hidden;
+    max-width: var(--max-width);
+    min-width: var(--min-width);
+    width: 100%;
+    margin: 0 auto;
 }
 
 a {
@@ -29,7 +33,6 @@ a {
 
 li {
     list-style: none;
-    cursor: pointer;
 }
 
 button {
@@ -41,9 +44,6 @@ button {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-weight: 400;
-}
-
-.page--no-scroll {
-    overflow: hidden;
+    font-size: 1.8rem;
+    font-weight: 300;
 }
